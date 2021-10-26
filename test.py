@@ -67,7 +67,7 @@ while True:
             overlap=overlap)
         
         # Post-processing
-        u1, v1, mask = validation.sig2noise_val(u0, v0, sig2noise, threshold = 1.05)
+        u1, v1, mask = validation.sig2noise_val(u0, v0, sig2noise, threshold = 0.55)
         u2, v2       = filters.replace_outliers(u1, v1, method='localmean', max_iter=3, kernel_size=3)
         x, y, u3, v3 = scaling.uniform(x, y, u2, v2, scaling_factor = 96.52)
         x, y, u3, v3 = tools.transform_coordinates(x, y, u3, v3)
