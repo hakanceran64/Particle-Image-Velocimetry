@@ -2,11 +2,11 @@
 
 # Particle Image Velocimetry
 
-Su parçacıklarının hareket yönlerinin tespit edilmesini hedeflemekteyim.
+Parçacıklarının hareket yönlerinin tespit edilmesini hedeflemekteyim. Bunun için OpenPIV isimli kütüphaneden faydalanarak bir deneme yapacağım. Amacım kameradan elde ettiğim görüntüler arasında ikişerli gruplar oluşturarak bu iki resim arasındaki farklı tespit etmek. Bu sayede hangi parçaçık hangi yöne ne kadar ne hızla gitmiş tespitini yapmış olabileceğim.
 
-Bunun için OpenPIV isimli kütüphaneden faydalanarak bir deneme yapacağım.
-
-Şimdi ilk denememi incelemek için [buraya](./main.ipynb) tıklayabilirsiniz.
+Daha önceden kayıtlı olan iki resim üzerinde gerçekleştirdiğim test için [buraya](./main.ipynb) tıklayabilirsiniz.
+Daha önceden kayıtlı olan resimleri kullanarak video şeklinde yaptığım inceleme için [buraya](.test.py) tıklayabilirsiniz.
+Gerçek zamanlı olarak kameradan aldığım görüntüler üzerinden yaptığım inceleme için [buraya](#) tıklayabilirsiniz.
 
 
 ## License
