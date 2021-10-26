@@ -15,8 +15,7 @@ Elde ettiğim görüntüleri ise [burada](./result_view.py) video formatında ka
 
 - [Sonuçlar](./result/)
 
-<img src="./test_images/a_frame/c000a.bmp" width="400">
-<img src="./result/img_0.bmp" width="400">
+<img src="./test_images/a_frame/c000a.bmp" width="400"> <br /> <img src="./result/img_0.bmp" width="400">
 
 ---
 
