@@ -7,7 +7,7 @@ from time import sleep
 fourcc = cv.VideoWriter_fourcc(*'XVID')
 
 # Kaydedilecek video dosyasının adı, uzantısı, konumu, saniyedeki çerçeve sayısı ve çözünürlüğü
-out = cv.VideoWriter('./result/video/output.avi', fourcc, 6.0, (800,800))
+out = cv.VideoWriter('./result/video/output.mp4', fourcc, 6.0, (800,800))
 
 frame_a = []
 
