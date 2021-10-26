@@ -11,26 +11,14 @@ Elde ettiğim görüntüleri ise [burada](./result_view.py) video formatında ka
 
 ## Kısa Özet
 
-[Giriş](./test_images/)
+- [Giriş](./test_images/)
 
-[Sonuçlar](./result/)
+- [Sonuçlar](./result/)
 
-![Test 1](./test_images/a_frame/c000a.bmp)
-
----
-
-
-![Output 1](./result/img_0.bmp)
+<img src="./test_images/a_frame/c000a.bmp" width="400">
+<img src="./result/img_0.bmp" width="400">
 
 ---
-
-<!-- blank line -->
-<figure class="video_container">
-  <video controls="true" allowfullscreen="true" poster="./result/img_0.bmp">
-    <source src="./result/video/output.mp4" type="video/mp4">
-  </video>
-</figure>
-<!-- blank line -->
 
 <video controls="controls">
   <source type="video/mp4" src="./result/video/output.mp4"></source>
@@ -38,7 +26,9 @@ Elde ettiğim görüntüleri ise [burada](./result_view.py) video formatında ka
   <p>Your browser does not support the video element.</p>
 </video>
 
-![Video](./result/video/output.mp4)
-
 ## License
 [MIT](LICENSE)
+
+---
+
+## Made with ❤️ Python 
