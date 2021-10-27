@@ -1,13 +1,10 @@
 import cv2 as cv
-import numpy as np
-import matplotlib.pyplot as plt
-from time import sleep
 
 # codec tanımlama ve VideoWriter nesnesi oluşturma bilgi için bkz: https://www.fourcc.org/codecs.php
 fourcc = cv.VideoWriter_fourcc(*'XVID')
 
 # Kaydedilecek video dosyasının adı, uzantısı, konumu, saniyedeki çerçeve sayısı ve çözünürlüğü
-out = cv.VideoWriter('./result/video/output.mp4', fourcc, 6.0, (800,800))
+out = cv.VideoWriter('./result/video/output.mp4v', fourcc, 6.0, (800,800))
 
 frame_a = []
 
