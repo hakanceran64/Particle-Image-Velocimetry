@@ -1,9 +1,7 @@
 from typing import final
 import cv2 as cv
-import sys
 import numpy as np
 import matplotlib.pyplot as plt
-import imageio
 from time import sleep
 from openpiv import tools, pyprocess, validation, filters, scaling
 

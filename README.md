@@ -1,5 +1,13 @@
 [![wakatime](https://wakatime.com/badge/user/3c7a50f7-fbe6-44cd-bb8b-623bd7ce08b2/project/56fcd503-86b0-44d3-b04e-475aec8415a3.svg)](https://wakatime.com/badge/user/3c7a50f7-fbe6-44cd-bb8b-623bd7ce08b2/project/56fcd503-86b0-44d3-b04e-475aec8415a3)
 
+---
+
+## Açıklama
+
+Bu repo henüz tamamlanmamıştır ve şuan güncelleme aşamasındadır.
+
+---
+
 ## Quick Link
 
 - [OpenPIV Read the Docs](https://openpiv.readthedocs.io/en/latest/index.html)
@@ -22,23 +30,25 @@ Elde ettiğim görüntüleri ise [burada](./result_view.py) video formatında ka
 
 ## Kısa Özet
 
-- [Giriş](./test_images/)
+- [Giriş](#)
 
-- [Sonuçlar](./result/)
+- [Sonuçlar](#)
 
 <img src="./test_images/a_frame/c000a.bmp" width="400"> <br /> <img src="./result/img_0.bmp" width="400">
 
 ---
 
-<video controls="controls">
-  <source type="video/mp4" src="./result/video/output.mp4"></source>
-  <source type="video/webm" src="./result/video/output.webm"></source>
-  <p>Your browser does not support the video element.</p>
-</video>
+## Resim veya Video Dönüştürme İşlemleriniz için:
+
+### [Video -> Images | Images -> Video](./img_video/README.md)
+
+---
 
 ## License
 [MIT](LICENSE)
 
 ---
 
-## Made with ❤️ Python 
+## Made with ❤️ Python
+
+---
