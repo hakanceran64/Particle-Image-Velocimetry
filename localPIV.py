@@ -8,12 +8,11 @@ from time import sleep
 from openpiv import tools, pyprocess, validation, filters, scaling
 
 frame_a = []
-frame_b = []
-gray  = np.array([np.ones([512, 512]),    np.zeros([512, 512])],    dtype=np.uint8)
+gray  = np.array([np.ones([720, 512]),    np.zeros([720, 512])],    dtype=np.uint8)
 
-firstWord = ["./test_images/a_frame/c0", "./test_images/b_frame/c0"]
-finalWord = ["a.bmp", "b.bmp"]
-file_name = ["", ""]
+firstWord = "./test_data_1/test_img_"
+finalWord = ".bmp"
+file_name = ""
 
 ## Figure'un RGB Array'e dönüştürülmesi.
 def getFigureAsRGBArray(fig):
@@ -24,24 +23,14 @@ def getFigureAsRGBArray(fig):
     return img
 
 # Dosya yollarının bir listeye kayıt edilmesi.
-for i in range(0, 100, 1):
-    if (i < 10):
-        file_name[0] = (firstWord[0] + "0" + str(i) + finalWord[0])
-        file_name[1] = (firstWord[1] + "0" + str(i) + finalWord[1])
-        frame_a.append(file_name[0])
-        frame_b.append(file_name[1])
-    else:
-        file_name[0] = (firstWord[0] + str(i) + finalWord[0])
-        file_name[1] = (firstWord[1] + str(i) + finalWord[1])
-        frame_a.append(file_name[0])
-        frame_b.append(file_name[1])
+for i in range(0, 1199, 1):
+    file_name = (firstWord + str(i) + finalWord)
+    frame_a.append(file_name)
 
 # Görüntü işleme alanı.
-for i in range(0, 99, 1):
+for i in range(0, 1198, 1):
     img_a = cv.imread(frame_a[i])
     img_b = cv.imread(frame_a[i+1])
-    
-    img_c = tools.imread(frame_a[i])
 
     gray[0] = cv.cvtColor(img_a, cv.COLOR_BGR2GRAY)
     gray[1] = cv.cvtColor(img_b, cv.COLOR_BGR2GRAY)
@@ -99,7 +88,7 @@ for i in range(0, 99, 1):
 
     cv.imshow("sonuc: ", sonuc)
 
-    dosya_adi = "./result/img_" + str(i) + ".bmp"
+    dosya_adi = "./result_data_1/img_" + str(i) + ".bmp"
     cv.imwrite(dosya_adi, sonuc)
 
     if (cv.waitKey(1) == ord("q")):
